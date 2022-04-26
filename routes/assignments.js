@@ -27,7 +27,6 @@ function getAssignments(req, res) {
       }
     );
    }
-   
 
 // Récupérer un assignment par son id (GET)
 function getAssignment(req, res){
