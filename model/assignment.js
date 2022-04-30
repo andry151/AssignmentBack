@@ -3,19 +3,6 @@ let mongoose = require('mongoose');
 let Schema = mongoose.Schema;
 var aggregatePaginate = require("mongoose-aggregate-paginate-v2");
 
-/*const prof = new Schema({ 
-    idprof: Number,
-    nom: String,
-    prenom: String,
-    photo: String
-});
-
-const matiere = new Schema({ 
-    idmatiere: Number,
-    nom: String,
-    image: String,
-    prof: [prof]
-});*/
 let AssignmentSchema = new Schema({
     id: Number,
     dateDeRendu: Date,
