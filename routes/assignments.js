@@ -32,7 +32,7 @@ function getAssignments(req, res) {
 function getAssignment(req, res){
     let assignmentId = req.params.id;
 
-    Assignment.findOne({id: assignmentId}, (err, assignment) =>{
+    Assignment.findOne({_id: assignmentId}, (err, assignment) =>{
         if(err){res.send(err)}
         res.json(assignment);
     })
@@ -45,6 +45,7 @@ function postAssignment(req, res){
     assignment.nom = req.body.nom;
     assignment.dateDeRendu = req.body.dateDeRendu;
     assignment.rendu = req.body.rendu;
+    assignment.createur = req.body.createur;
     assignment.auteur = req.body.auteur;
     assignment.note = req.body.note;
     assignment.remarques = req.body.remarques;

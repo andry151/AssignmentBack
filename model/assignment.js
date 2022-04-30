@@ -21,6 +21,7 @@ let AssignmentSchema = new Schema({
     dateDeRendu: Date,
     nom: String,
     rendu: Boolean,
+    createur : String,
     auteur : String,
     note : String,
     remarques : String,
@@ -30,8 +31,8 @@ let AssignmentSchema = new Schema({
         image: String,
         prof: {
             idprof: Number,
+            sexe: String,
             nom: String,
-            prenom: String,
             photo: String,
         }
     }
